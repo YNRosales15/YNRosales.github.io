@@ -11,7 +11,7 @@
 
 /* Navbar links */
 .navbar a {
-   color: rgb(109, 223, 33);
+   color: rgb(28, 38, 111);
    text-decoration: none;
    padding: 15px 20px;
    font-size: 18px;
@@ -21,7 +21,7 @@
 }
 .navbar a:visited {
 
-    color: rgb(62, 33, 223);
+    color: rgb(83, 62, 203);
 }
 
 /* Navbar links on mouse-over */
