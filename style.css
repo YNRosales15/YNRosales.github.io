@@ -1,51 +1,80 @@
 /* Style the navigation bar */
 .navbar {
     width: 100%;
-    background-color: 
-    rgba(2, 123, 107, 0.295);
-    overflow: auto;
+    background-color:rgba(2, 123, 107, 0.295);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 /* Navbar links */
 .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-}   
+   color: rgb(109, 223, 33);
+   text-decoration: none;
+   padding: 15px 20px;
+   font-size: 18px;
+   display: inline-block;
+
+  
+}
+.navbar a:visited {
+
+    color: rgb(62, 33, 223);
+}
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
     background-color: #1873875b;
 }
 
-/* Current/active navbar link */
-.active{
-    background-color: #229aafa5;
-}
-
-/* Style for the about me section */
-.about-me {
-    display:  grid;
-    place-items: center;
-    height: auto;
+/*style the active/current link*/
+.navbar a.active {
+    background-color: #229aaf64;
+    color:white;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500px */
 @media screen and (max-width: 500px) {
     .navbar a {
         float: none;
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
     }
+}
+
+/* Style for the about me section */
+.pictureOfme {
+    display:  grid;
+    place-items: center;
+    height: auto;
 }
 
 /* Style the headings */
 h1{
     text-align: center;
+    text-decoration: underline;
+
 }
 
+
 h2{
+    
+
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     text-decoration: underline;
+    background-color: #229aaf54;
+    width: fit-content;
+    padding: 5px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
 }
