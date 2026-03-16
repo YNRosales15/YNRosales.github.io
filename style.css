@@ -1,4 +1,51 @@
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: 
+    rgba(2, 123, 107, 0.295);
+    overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}   
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #1873875b;
+}
+
+/* Current/active navbar link */
+.active{
+    background-color: #229aafa5;
+}
+
+/* Style for the about me section */
 .about-me {
-    display: block;
-    margin: auto;
+    display:  grid;
+    place-items: center;
+    height: auto;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500px */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+/* Style the headings */
+h1{
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
 }
