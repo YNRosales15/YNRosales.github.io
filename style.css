@@ -210,6 +210,18 @@ box-sizing: border-box;
     border-radius: 8px;
     cursor: pointer;
 }
+.grainger{
+    list-style: circle;
+    padding-left: 20px;
+    margin:15px 0;
+    text-align: justify;
+}
+.grainger li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 
 /* Style the description section */
 .project1_description {
@@ -228,3 +240,50 @@ box-sizing: border-box;
     padding-left: 20px;
 
 }
+
+.video-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.video-title {
+    text-decoration-line:underline ;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* base video card */
+.video-item {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 16px;
+}
+
+/* responsive iframe */
+.video-item iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+}
+
+/* hover */
+.video-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* optional colors */
+.video1 { background-color: #e6f7ff;
+ }
+.video2 { background-color: #fff0f6; }
+.video3 { background-color: #f6ffed; }
