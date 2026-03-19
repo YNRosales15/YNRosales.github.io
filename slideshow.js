@@ -39,24 +39,53 @@ const slides = {
             image: "images/SeimoaiScreen.jpg",          
             alt: "SeismoAI User Interface",
             caption: "SeismoAI User Interface"
+        },
+        {
+            image: "images/seimo_mosquitto.jpg",
+            alt: "SeismoAI MQTT Communication",
+            caption: "SeismoAI MQTT Communication"
         }
     ],
     /* Add more slideshows here if needed */
     jarvis: [
+        { image: "images/jarvis_img/final_Prototype.jpg",
+            alt: "Jarvis Final Prototype",
+            caption: "Jarvis Final Prototype"
+
+        },
      
         {
-            image: "images/jarvisApp.png",
+            image: "images/jarvis_img/mirror.jpg",
+            alt: "Jarvis Mirror App",
+            caption: "Jarvis Mirror Interface"
+        },
+        {
+            image: "images/jarvis_img/app_Testing.jpg",
+            alt: "Jarvis App Testing",
+            caption: "Jarvis Application Testing"
+        },
+        {
+            image: "images/jarvis_img/Jarvis Mobile app.JPG",
             alt: "Jarvis Mobile App",
             caption: "Jarvis Mobile Application Interface"
+        },
+        {
+            image: "images/jarvis_img/MirrorModules.JPG",
+            alt: "Jarvis Mirror Modules",
+            caption: "Jarvis Mirror Modules"
+        },
+        {
+            image: "images/jarvis_img/softwarediagram.jpg",
+            alt: "Jarvis Software Diagram",
+            caption: "Jarvis Software Architecture Diagram"
         }
-
 
     ]
 };
 
 const currentIndex = {
   seismoai: 0,
-  jarvis: 0
+  jarvis: 0,
 };
 
 function showSlide(name) {
