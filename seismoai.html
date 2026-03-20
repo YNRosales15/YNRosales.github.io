@@ -1,73 +1,92 @@
-<div id="navbar"></div>
-<script src="navbar.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SeismoAI</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <script src="navbar.js"></script>
+        <div class="project1_container">
+        <div class="project1_images">
 
-<div class="project1_container">
-    <div class="project1_images">
-        <div class="slideshow-container">
-            <div class="slide-frame">
-                <img id="seismoai-slide" class="slide-image" src="" alt="">
+            <div class="seismo-logo-left">
+                <img src="images/seismoLogo.jpg" alt="SeismoAI Logo">
             </div>
-            <p id="seismoai-caption"></p>
-            <div class="slideshow-buttons">
-                <button onclick="changeSlide('seismoai', -1)">❮ Prev</button>
-                <button onclick="changeSlide('seismoai', 1)">Next ❯</button>
+
+            <div class="slideshow-container">
+                <div class="slide-frame">
+                    <img id="seismoai-slide" class="slide-image" src="" alt="">
+                </div>
+
+                <p id="seismoai-caption"></p>
+
+                <div class="slideshow-buttons">
+                    <button onclick="changeSlide('seismoai', -1)">❮ Prev</button>
+                    <button onclick="changeSlide('seismoai', 1)">Next ❯</button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="project1_description">
-        <h3>Grainger Computing Innovation Prize Competition - SeismoAI</h3>
-        <h4>Project Description:</h4>
-        <p>
-            SeismoAI is designed to deliver faster, smarter, and more reliable earthquake detection.
-            SeismoAI integrates seismic sensors, GPS localization, and environmental monitoring
-            to generate real-time alerts that support disaster response and help save lives. The
-            system has a companion mobile application that enables users to monitor device status,
-            control system functions, and receive immediate earthquake notifications, transforming
-            raw seismic data into safety information. SeismoAI is a modular device and has an
-            on-board AI pipeline powered by a TensorFlow Lite framework that converts raw data
-            into waveforms for real-time analysis. The system can be deployed in earthquake-prone
-            regions as well as environments where abnormal vibrations pose a safety risk, such as
-            mining operations or near construction sites.
-        </p>
 
-        <h4>My Contributions:</h4>
-        <ul class="roles">
-            <li>Founder, Team Lead, and Software Engineer</li>
-            <li>Integrated software and hardware components for seamless operation</li>
-            <li>Designed and implemented the AI pipeline for real-time earthquake detection</li>
-            <li>Developed the mobile application interface for user interaction</li>
-            <li>Performed testing and debugging to ensure system reliability</li>
-            <li>Coordinated team efforts and managed project timelines to ensure successful completion</li>
-            <li>Led a multidisciplinary team of 4 engineers: Charlie Yonkura, Humza Ali, Kadidjatou Yattassaye, and myself</li>
+        <div class="project1_description">
+            <div class="seismo-header">
+                <div class = "seismo_title">
+                    <h3>SeismoAI</h3>
+                    <p class="seismo_subtitle">Grainger Computing  Innovation Prize Competiton Finalist</p>
+                </div>
+            </div>
+
+            <h4>Project Description:</h4>
+            <p>
+                SeismoAI is designed to deliver faster, smarter, and more reliable earthquake detection.
+                SeismoAI integrates seismic sensors, GPS localization, and environmental monitoring
+                to generate real-time alerts that support disaster response and help save lives. The
+                system has a companion mobile application that enables users to monitor device status,
+                control system functions, and receive immediate earthquake notifications, transforming
+                raw seismic data into safety information. SeismoAI is a modular device and has an
+                on-board AI pipeline powered by a TensorFlow Lite framework that converts raw data
+                into waveforms for real-time analysis. The system can be deployed in earthquake-prone
+                regions as well as environments where abnormal vibrations pose a safety risk, such as
+                mining operations or near construction sites.
+            </p>
+
+            <h4>My Contributions:</h4>
+            <ul class="roles">
+                <li>Founder, Team Lead, and Software Engineer</li>
+                <li>Integrated software and hardware components for seamless operation</li>
+                <li>Designed and implemented the AI pipeline for real-time earthquake detection</li>
+                <li>Developed the mobile application interface for user interaction</li>
+                <li>Performed testing and debugging to ensure system reliability</li>
+                <li>Coordinated team efforts and managed project timelines to ensure successful completion</li>
+                <li>Led a multidisciplinary team of 4 engineers: Charlie Yonkura, Humza Ali, Kadidjatou Yattassaye, and myself</li>
+            </ul>
+
+            <h4>Technologies Used:</h4>
+            <ul class="tech-list">
+                <li>Python</li>
+                <li>Linux</li>
+                <li>TensorFlow Lite</li>
+                <li>Raspberry Pi</li>
+                <li>MQTT</li>
+                <li>GPS Module Integration</li>
+                <li>Mobile App Development</li>
+                <li>ESP32</li>
+            </ul>
+        </div>
+    </div>
+    <script src="slideshow.js"></script>
+
+    <div class="video-section">
+        <p class="video-title">Watch  SeismoAI Final Presentation | Grainger Computing Innovation Prize Finalist:</p>
+        <ul class = "grainger">
+            <li>Top 4 finalist out of 142 students  </li>
+            <li>Top 2 team out of 26 competing teams</li>
+            <li>Awarded 2nd place and a $10,000 prize </li>
+            <li>The Grainger Computing Innovation Prize is a competitive, team-based program focused on solving real-world challenges through computing and AI innovation</li>
         </ul>
 
-        <h4>Technologies Used:</h4>
-        <ul class="tech-list">
-            <li>Python</li>
-            <li>Linux</li>
-            <li>TensorFlow Lite</li>
-            <li>Raspberry Pi</li>
-            <li>MQTT</li>
-            <li>GPS Module Integration</li>
-            <li>Mobile App Development</li>
-            <li>ESP32</li>
-        </ul>
-    </div>
-
-</div>
-
-<script src="slideshow.js"></script>
-<div class="video-section">
-    <p class="video-title">Watch  SeismoAI Final Presentation | Grainger Computing Innovation Prize Finalist:</p>
-    <ul class = "grainger">
-        <li>Top 4 finalist out of 142 students  </li>
-        <li>Top 2 team out of 26 competing teams</li>
-        <li>Awarded 2nd place and a $10,000 prize </li>
-        <li>The Grainger Computing Innovation Prize is a competitive, team-based program focused on solving real-world challenges through computing and AI innovation</li>
-    </ul>
-
-    <div class="video-container">
+        <div class="video-container">
             <div class="video-item video1">
                 <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/BlO6xugjX_E?si=J1cNFTUbzYPzYFLY" title="YouTube video player" 
@@ -82,5 +101,7 @@
                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+        </div>
     </div>
-</div>
+</body>
+</html> 
