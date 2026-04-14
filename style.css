@@ -1,22 +1,35 @@
+/*
+===========================
+  Navigation Container
+===========================
+This controls the top bar layout
+*/
+
 /* Style the navigation bar */
 .navbar {
     width: 100%;
     background-color: rgba(2, 123, 107, 0.295);
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;  /* puts the items in a row */
+    justify-content: space-evenly; /* Spreads links evenly */
+    align-items: center;  /* Centers the items vertically */
 }
 
-/* Navbar links */
+/*
+===================
+ Navbar links 
+===================
+Allows the links to be clickable in the Navbar
+*/
 .navbar a,
 .dropbtn {
     color: rgb(28, 38, 111);
-    text-decoration: none;
-    padding: 18px 24px;
+    text-decoration: none;  /* Should remove the  underline*/
+    padding: 18px 24px; /* 18px top/bottom, 24px left/right → makes navbar items bigger and easier to click */
     font-size: 22px;
     display: inline-block;
     font-weight: 600;
+    box-sizing:border-box;  /* keep
 }
 
 /* Change color of visited links */
@@ -30,39 +43,54 @@
     background-color: #1873875b;
 }
 
-/* style the active/current link */
+/* style the active page highlight */
 .navbar a.active,
 .dropbtn.active {
     background-color: #229aaf64;
     color: rgb(1, 134, 163);
 }
 
+
 /* Dropdown container */
 .dropdown {
-    position: relative;
+    position: relative; /* Positions dropdown to alight the top */
     display: inline-block;
 }
 
-/* Dropdown content */
+/* Projects button */
+.dropbtn {
+    width: 160px;
+    text-align: center;
+}
+
+/*
+====================
+ Dropdown Menu BOx
+====================
+ */
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 160px;  /* Controls the dropdown width */
     background-color: #229aaf64;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
     border-radius: 0 0 8px 8px;
     z-index: 1000;
+    overflow: hidden; /* keeps the corners clean */
 }
 
 /* Dropdown links */
 .dropdown-content a {
     display: block;
-    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14x 16px;
     text-align: center;
     color: rgb(28, 38, 111);
     white-space: nowrap;
+    margin: 0;
 }
 
 /* dropdown hover */
