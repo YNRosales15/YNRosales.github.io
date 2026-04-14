@@ -29,7 +29,6 @@ Allows the links to be clickable in the Navbar
     font-size: 22px;
     display: inline-block;
     font-weight: 600;
-    box-sizing:border-box;  /* keep
 }
 
 /* Change color of visited links */
@@ -59,7 +58,7 @@ Allows the links to be clickable in the Navbar
 
 /* Projects button */
 .dropbtn {
-    width: 160px;
+    width: 140px;
     text-align: center;
 }
 
